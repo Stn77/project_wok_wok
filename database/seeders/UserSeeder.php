@@ -21,5 +21,13 @@ class UserSeeder extends Seeder
             'role' => 'admin',
             'nisn' => '1234',
         ]);
+        
+        User::create([
+            'name' => 'guru',
+            'password' => bcrypt('1234'),
+            'email' => 'guru@gmail.com',
+            'role' => 'guru',
+            'nisn' => '1111',
+        ]);
     }
 }

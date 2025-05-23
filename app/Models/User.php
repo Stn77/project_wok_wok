@@ -26,7 +26,8 @@ class User extends Authenticatable
         'jurusan', //nullable
         'no_tlp', // nullable
         'role',
-        'nisn'
+        'nisn',
+        'foto_profile'
     ];
 
     protected $date = 'deleted_at';

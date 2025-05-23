@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\siswa;
+namespace App\Http\Controllers\guru;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class SiswaPageController extends Controller
+class GuruPageController extends Controller
 {
     //
     public function dashboard()

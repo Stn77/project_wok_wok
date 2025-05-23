@@ -46,9 +46,15 @@ class AuthController extends Controller
         if($user->role === 'admin'){
             return redirect()->route('admin.dashboard');
         } else if ($user->role === 'guru'){
-            
+            return redirect()->route('guru.dashboard');
         } else {
-
+            return redirect()->route('siswa.dashboard');
         }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/login');
     }
 }
